@@ -1,6 +1,6 @@
 {
-  "name": "woff2base64",
-  "version": "1.0.0",
+  "name": "wofftobase64",
+  "version": "1.0.1",
   "author": "chengjiang",
   "license": "MIT",
   "repository": "syn173/woff2base64",
