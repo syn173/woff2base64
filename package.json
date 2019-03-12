@@ -1,0 +1,16 @@
+{
+  "name": "woff2base64",
+  "version": "1.0.0",
+  "author": "chengjiang",
+  "license": "MIT",
+  "repository": "syn173/woff2base64",
+  "description": "woff2base64",
+  "main": "index.js",
+  "bin": {
+    "woff2base64": "bin/woff2base64.js"
+  },
+  "dependencies": {},
+  "scripts": {
+    "test": "woff2base64"
+  }
+}
