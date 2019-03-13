@@ -1,6 +1,6 @@
 {
   "name": "wofftobase64",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "chengjiang",
   "license": "MIT",
   "repository": "syn173/woff2base64",
@@ -9,7 +9,9 @@
   "bin": {
     "woff2base64": "bin/woff2base64.js"
   },
-  "dependencies": {},
+  "dependencies": {
+    "chalk": "^2.4.2"
+  },
   "scripts": {
     "test": "woff2base64"
   }

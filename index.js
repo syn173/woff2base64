@@ -1,7 +1,9 @@
 const fs = require('fs');
+const chalk = require('chalk');
+const error = chalk.bold.red;
 
 if (process.argv.length < 3) {
-  console.log('please input the path of iconfont files');
+  console.log(error('please input the path of iconfont files'));
   process.exit(1);
 }
 
@@ -14,7 +16,7 @@ const iconPath = `${path}/iconfont.css`;
 const wxssPath = `${path}/iconfont.wxss`;
 
 if (!fs.existsSync(woffPath || !fs.existsSync(iconPath))) {
-  console.log('no woff or iconfont.css exit');
+  console.log(error('no woff or iconfont.css exit'));
   process.exit(1);
 }
 
@@ -31,4 +33,4 @@ wxssData = wxssData.replace(/\@font-face\s*{[\s\S]*?}/,
 }`);
 
 fs.writeFileSync(wxssPath, wxssData);
-console.log('finished!');
+console.log(chalk.green('finished!'));
