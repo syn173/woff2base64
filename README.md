@@ -13,5 +13,5 @@ npm install woff2base64 -g
 ```
 ### 使用
 ```bash
-woff2base64 path # path 为下载iconfont的文件夹目录
+woff2base64 path # path 为下载iconfont的文件夹目录，若为空则默认是当前路径下
 ```

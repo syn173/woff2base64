@@ -2,13 +2,12 @@ const fs = require('fs');
 const chalk = require('chalk');
 const error = chalk.bold.red;
 
-if (process.argv.length < 3) {
-  console.log(error('please input the path of iconfont files'));
-  process.exit(1);
-}
+// if (process.argv.length < 3) {
+//   console.log(error('please input the path of iconfont files2'));
+//   process.exit(1);
+// }
 
-//const path = './data/font';
-const path = process.argv[2];
+const path = process.argv.length < 3 ? '.' : process.argv[2];
 
 const woffPath = `${path}/iconfont.woff`;
 const iconPath = `${path}/iconfont.css`;
