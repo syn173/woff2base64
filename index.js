@@ -1,4 +1,5 @@
 const fs = require('fs');
+const path = require('path');
 const chalk = require('chalk');
 const error = chalk.bold.red;
 
@@ -7,12 +8,12 @@ const error = chalk.bold.red;
 //   process.exit(1);
 // }
 
-const path = process.argv.length < 3 ? '.' : process.argv[2];
+const curPath = process.argv.length < 3 ? '.' : process.argv[2];
 
-const woffPath = `${path}/iconfont.woff`;
-const iconPath = `${path}/iconfont.css`;
+const woffPath = path.join(curPath, 'iconfont.woff');
+const iconPath = path.join(curPath, 'iconfont.css');
 
-const wxssPath = `${path}/iconfont.wxss`;
+const wxssPath = path.join(curPath, 'iconfont.wxss');
 
 if (!fs.existsSync(woffPath || !fs.existsSync(iconPath))) {
   console.log(error('no woff or iconfont.css exit'));
