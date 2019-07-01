@@ -9,7 +9,7 @@ node>=8.5.0
 
 ### 安装
 ```bash
-npm install woff2base64 -g
+npm install wofftobase64 -g
 ```
 ### 使用
 ```bash
